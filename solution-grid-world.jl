@@ -1,6 +1,9 @@
 using JuMP
 import Ipopt
 
+println("hello world")
+
+
 #Define the model
 model = Model(optimizer_with_attributes(Ipopt.Optimizer))
 @variable(model, η[1:13, 1:4]>=0)
